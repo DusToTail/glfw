@@ -47,6 +47,7 @@ project "GLFW"
             "_CRT_SECURE_NO_WARNINGS"
         }
 
+<<<<<<< HEAD
     filter "configurations:Debug"
         runtime "Debug"
         symbols "on"
@@ -54,3 +55,14 @@ project "GLFW"
     filter "configurations:Release"
         runtime "Release"
         optimize "on"
+=======
+    filter {"configurations:Debug"}
+        runtime "Debug"
+        buildoptions "/MTd"
+        symbols "On"
+
+    filter {"configurations:Release"}
+        runtime "Release"
+        buildoptions "/MT"
+        optimize "On"
+>>>>>>> origin
